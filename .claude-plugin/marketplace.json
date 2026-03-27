@@ -1,0 +1,13 @@
+{
+  "name": "rendl",
+  "owner": {
+    "name": "paffkaDigital"
+  },
+  "plugins": [
+    {
+      "name": "rendl",
+      "source": "./plugins/rendl",
+      "description": "Kuchyňský asistent — recepty, sklad, jídelníčky a nákupní seznamy"
+    }
+  ]
+}

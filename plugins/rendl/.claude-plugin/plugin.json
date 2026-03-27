@@ -1,0 +1,9 @@
+{
+  "name": "rendl",
+  "version": "0.1.0",
+  "description": "Kuchyňský asistent — recepty, sklad, jídelníčky a nákupní seznamy",
+  "license": "MIT",
+  "author": {
+    "name": "paffkaDigital"
+  }
+}
