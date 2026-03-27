@@ -15,12 +15,18 @@ user-invocable: true
 
 ## Postup — první onboarding
 
-### 1. Inicializace adresářů
+### 1. Konfigurace datového adresáře
 
-Vytvoř adresářovou strukturu (pokud neexistuje):
-```bash
-mkdir -p ~/.config/rendl/{recepty,sklad,jidelnicky,nakupy}
-```
+Zkontroluj, zda existuje `~/.config/rendl/config.md`:
+- Pokud existuje → přečti `rendl_home` z frontmatter, použij jako `$RENDL_HOME`
+- Pokud neexistuje → zeptej se uživatele:
+  "Kam chceš ukládat data? (stačí potvrdit pro výchozí ~/.config/rendl, nebo zadej vlastní cestu — třeba sdílenou složku)"
+  - Vytvoř adresář `~/.config/rendl/` pokud neexistuje
+  - Přečti šablonu `${CLAUDE_PLUGIN_ROOT}/sablony/config.md`
+  - Zapiš `~/.config/rendl/config.md` s vybranou cestou
+
+Pak vytvoř `$RENDL_HOME` a podadresáře pokud neexistují:
+`recepty/`, `sklad/`, `jidelnicky/`, `nakupy/`
 
 ### 2. Persona
 

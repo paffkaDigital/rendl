@@ -2,7 +2,8 @@
 
 ## Cesty
 
-- **RENDL_HOME:** `~/.config/rendl` — uživatelská data (přežijí aktualizace pluginu)
+- **Konfigurace:** Vždy nejdřív přečti `~/.config/rendl/config.md` (fixní cesta). Z frontmatter extrahuj `rendl_home` — to je cesta k datovému adresáři. Pokud config neexistuje → výchozí `$RENDL_HOME` je `~/.config/rendl`.
+- **RENDL_HOME:** persistentní uživatelská data (recepty, sklad, jídelníčky, nákupy). Tento adresář přežije aktualizace pluginu.
 - **Plugin root:** `${CLAUDE_PLUGIN_ROOT}` — kód pluginu (šablony, skills, hooky)
 
 ## Persona
